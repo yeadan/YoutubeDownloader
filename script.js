@@ -3,6 +3,7 @@ let URLinput = document.querySelector('.URL-input');
 let select = document.querySelector('.opt');
 let serverURL = 'http://localhost:4000';
 
+//Evento de click en el botón
 Btn.addEventListener('click', () => {
 	if (!URLinput.value) {
 		alert('Enter YouTube URL');
@@ -15,6 +16,7 @@ Btn.addEventListener('click', () => {
 	}
 });
 
+// Bajar el link en mp3 (audio)
 async function downloadMp3(query) {
 	const res = await fetch(`${serverURL}/downloadmp3?url=${query}`);
 	if(res.status == 200) {
@@ -27,6 +29,7 @@ async function downloadMp3(query) {
 	}
 }
 
+//Bajar el link en mp4 (vídeo)
 async function downloadMp4(query) {
 	const res = await fetch(`${serverURL}/downloadmp4?url=${query}`);
 	if(res.status == 200) {

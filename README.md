@@ -1,6 +1,6 @@
 # Youtube Downloader con express.js
 
-Este repositorio está basado en el de [mooradal](https://github.com/mooradal/youtubeDownloader). Su finalidad es, utilizando el módulo ytdl-core, poder descargar links de youtube en formato mp3(audio) o mp4(vídeo).   
+Este repositorio está basado en el de [mooradal](https://github.com/mooradal/youtubeDownloader). Su finalidad es, utilizando el módulo ytdl-core, poder descargar links de youtube en formato mp3 (audio) o mp4 (vídeo).   
 
 
 
@@ -22,6 +22,7 @@ o
 ```
 nodemon index.js
 ```
+   
    
 ### Donaciones    
     
